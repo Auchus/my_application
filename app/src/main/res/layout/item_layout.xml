@@ -16,18 +16,17 @@
         android:background="#778BC3">
 
         <ImageView
-            android:id="@+id/image"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:id="@+id/image"
             android:layout_marginStart="20dp"
-            android:adjustViewBounds="true"
             android:padding="8dp"
+            android:adjustViewBounds="true"
             android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:src="@drawable/ustrojstva_kompyutera"
-
-            app:layout_constrainBotton_toBottonOf="parent"
-            app:layout_constrainStart_toStartOf="parent"
-            app:layout_constrainTop_toTopOf="parent"
 
             />
 
