@@ -71,7 +71,8 @@ class MainActivity : AppCompatActivity() {
         )
 
         descList = arrayOf(
-            getString(R.string.binarnyj_kod)
+            getString(R.string.binarnyj_kod),
+
         )
 
         detailImageList = arrayOf(
@@ -118,7 +119,6 @@ class MainActivity : AppCompatActivity() {
         })
         myAdapter = AdapterClass(searchList)
         recyclerView.adapter = myAdapter
-
         myAdapter.onItemClick = {
             val intent = Intent(this, DetailActivity::class.java)
             intent.putExtra("android", it)

@@ -66,6 +66,21 @@
                 android:textSize="18sp"
                 app:cornerRadius="30dp" />
 
+
+            <Button
+                android:id="@+id/login_button_auth_google"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:padding="4dp"
+                android:shadowColor="#3F51B5"
+                android:shadowDx="20"
+                android:shadowDy="15"
+                android:shadowRadius="10"
+                android:text="Войти через Google"
+                android:textSize="18sp"
+                app:cornerRadius="30dp" />
+
             <TextView
                 android:id="@+id/signupRedirectText"
                 android:layout_width="wrap_content"
