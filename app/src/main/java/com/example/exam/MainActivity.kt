@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.exam.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import java.util.*
 import kotlin.collections.ArrayList
@@ -21,18 +22,38 @@ class MainActivity : AppCompatActivity() {
     lateinit var descList:Array<String>
     lateinit var detailImageList: Array<Int>
     private lateinit var myAdapter: AdapterClass
-
+    lateinit var binding: ActivityMainBinding
 
     companion object{
         lateinit var auth: FirebaseAuth
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.bottomMenu.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.test ->{
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.temy ->{
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
+                }
+                R.id.home ->{
+                    val intent = Intent(this, HomeAccount::class.java)
+                    startActivity(intent)
+                }
+
+            }
+            true
+        }
 
         imageList = arrayOf(
             R.drawable.binarnyj_kod,
-            R.drawable.informacionnye_modeli,
+/*            R.drawable.informacionnye_modeli,
             R.drawable.logicheskie_vyrazheniya,
             R.drawable.baza_dannyh,
             R.drawable.kodirovanie_informacii,
@@ -47,12 +68,12 @@ class MainActivity : AppCompatActivity() {
             R.drawable.obrabotka_informacii,
             R.drawable.programmirovanie_v_elektronnye_tablicy,
             R.drawable.vyigryshnaya_strategiya,
-            R.drawable.uslovnye_operatory
+            R.drawable.uslovnye_operatory*/
         )
 
         titleList = arrayOf(
             "Системы счисления",
-            "Информационные модели",
+           /* "Информационные модели",
             "Логические выражения",
             "База данных",
             "Кодирование информации",
@@ -67,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             "Обработка целочисленной информации",
             "Программирование в электронных таблицах",
             "Выиграшная стратегия",
-            "Условные операторы"
+            "Условные операторы"*/
         )
 
         descList = arrayOf(
@@ -130,6 +151,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, SignupActivity::class.java))
             finish()
         }
+
+
     }
 
     private fun getData(){
