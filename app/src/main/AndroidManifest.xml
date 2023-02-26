@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Exam"
         tools:targetApi="31">
         <activity
+            android:name=".Quest"
+            android:exported="false" />
+        <activity
             android:name=".HomeAccount"
             android:exported="false" />
         <activity

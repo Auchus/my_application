@@ -31,20 +31,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        binding.bottomMenu.selectedItemId = R.id.temy
         binding.bottomMenu.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.test ->{
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }
-                R.id.temy ->{
-                    val intent = Intent(this, LoginActivity::class.java)
-                    startActivity(intent)
-                }
                 R.id.home ->{
-                    val intent = Intent(this, HomeAccount::class.java)
-                    startActivity(intent)
+                    val intent2 = Intent(this, HomeAccount::class.java)
+                    startActivity(intent2)
                 }
 
             }

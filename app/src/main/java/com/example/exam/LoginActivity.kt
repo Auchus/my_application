@@ -133,7 +133,7 @@ class LoginActivity : AppCompatActivity() {
                 val elapsedSeconds = diff / secondsInMilli
 
 
-                binding.textView.text = "$elapsedDays days $elapsedHours hs $elapsedMinutes min $elapsedSeconds sec"
+                binding.textView.text = "$elapsedDays дней $elapsedHours часов $elapsedMinutes минут $elapsedSeconds секунд"
             }
 
             override fun onFinish() {
