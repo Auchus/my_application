@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomMenu.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.test ->{
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, Quest::class.java)
                     startActivity(intent)
                 }
                 R.id.home ->{
