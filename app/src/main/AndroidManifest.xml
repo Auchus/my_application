@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,10 +16,34 @@
         android:theme="@style/Theme.Exam"
         tools:targetApi="31">
         <activity
-            android:name=".Quest"
+            android:name=".temyFive"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temyFour"
+            android:exported="false" />
+        <activity
+            android:name=".temy.teymThree"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temyTwo"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temyOne"
+            android:exported="false" />
+        <activity
+            android:name=".QuizResult"
+            android:exported="false" />
+        <activity
+            android:name=".pervyjTest"
             android:exported="false" />
         <activity
             android:name=".HomeAccount"
+            android:exported="false" />
+        <activity
+            android:name=".quest.questOne"
+            android:exported="false" />
+        <activity
+            android:name=".Quest"
             android:exported="false" />
         <activity
             android:name=".DetailActivity"

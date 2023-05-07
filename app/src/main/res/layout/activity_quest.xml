@@ -1,9 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Quest">
+    android:layout_height="1000dp"
+    tools:context=".Quest"
+    tools:layout_editor_absoluteX="-4dp"
+    tools:layout_editor_absoluteY="11dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Тесты"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Кнопки -->
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:text="Вариант 1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:text="Вариант 2" />
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="140dp"
+                    android:layout_height="48dp"
+                    android:text="Вариант 3" />
+
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Вариант 4" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="180dp"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="Разобранные тесты"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Вариант 5"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Полезный материал"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dowloding"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Скачать вспомогающий материал"
+                android:textSize="10dp"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/dowlodingImage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Скачать дополнительный материал"
+                android:textSize="10dp"
+                android:layout_marginLeft="25dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/imageSlider"
+                android:layout_width="315dp"
+                android:layout_height="242dp"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="5"
+                app:iss_delay="0"
+                app:iss_error_image="@color/lavender"
+                app:iss_period="7000"
+                app:iss_placeholder="@color/lavender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

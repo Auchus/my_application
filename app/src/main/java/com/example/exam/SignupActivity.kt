@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.exam.classModel.UserModel
 import com.example.exam.databinding.ActivitySignupBinding
 import com.google.android.gms.auth.api.credentials.IdToken
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
@@ -18,12 +19,22 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class SignupActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignupBinding
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var email:String
+    private lateinit var nameUser:String
+    private lateinit var password:String
+    private lateinit var sName:String
+    private lateinit var confirmPassword:String
+    private lateinit var sAddress:String
+    private lateinit var database: DatabaseReference
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +44,7 @@ class SignupActivity : AppCompatActivity() {
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
 
+        database = Firebase.database.reference
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.client_id))
             .requestEmail()
@@ -46,16 +58,19 @@ class SignupActivity : AppCompatActivity() {
         }
 
         binding.signupButton.setOnClickListener {
-            val email = binding.singupEmail.text.toString()
-            val password = binding.singupPassword.text.toString()
-            val confirmPassword = binding.singupConfirm.text.toString()
+            email = binding.singupEmail.text.toString()
+            nameUser = binding.nameUser.text.toString()
+            password = binding.singupPassword.text.toString()
+            confirmPassword = binding.singupConfirm.text.toString()
 
-            if(email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()){
+            if(email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty() && nameUser.isNotEmpty()){
                 if(password == confirmPassword){
                     firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener{
                         if(it.isSuccessful){
+                            saveData()
                             val intent = Intent(this, LoginActivity::class.java)
                             startActivity(intent)
+
                         }else{
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_LONG).show()
                         }
@@ -72,6 +87,16 @@ class SignupActivity : AppCompatActivity() {
             startActivity(loginIntent)
         }
     }
+
+    private fun saveData() {
+        sName = nameUser.toString().trim()
+        sAddress = email.toString().trim()
+        val user = UserModel(sName,sAddress)
+        val userID = FirebaseAuth.getInstance().currentUser!!.uid
+        database.child("User").child(userID).setValue(user)
+
+    }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

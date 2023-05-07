@@ -6,31 +6,148 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.SearchView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:id="@+id/search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:iconifiedByDefault="false"
-        app:searchHintIcon="@null"
-        app:queryHint="Поиск..."
-        android:focusable="false"
-        app:closeIcon="@drawable/baseline_clear_24"
-        app:searchIcon="@drawable/baseline_search_24"
-        android:background="@drawable/search_bkg"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        tools:ignore="MissingConstraints">
 
-    <androidx.recyclerview.widget.RecyclerView
-         android:layout_width="match_parent"
-         android:layout_height="0dp"
-         android:id="@+id/recyclerView"
-         android:layout_marginTop="12dp"
-         app:layout_constraintTop_toBottomOf="@id/search"
-         app:layout_constraintBottom_toBottomOf="parent"
-         app:layout_constraintStart_toStartOf="parent"
-         app:layout_constraintEnd_toEndOf="parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_button"
+                android:text="Перейти на курс &quot;Параметры информационных объектов&quot;" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:text="Перейти на курс &quot;Кодирование и декодирование информации&quot;"  />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:text="Перейти на курс &quot;Значение логического выражения&quot;" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:text="Перейти на курс &quot;Формальные описания реальных объектов и процессов&quot;"  />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:text="Перейти на курс &quot;Простые линейные алгоритмы&quot;"
+                app:icon="@drawable/baseline_password_24" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:text="Перейти на курс &quot;Программа с условным оператором&quot;"  />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:text="Перейти на курс &quot;Информационно-коммуникационные технологии&quot;"  />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:text="Перейти на курс &quot;Запросы для поисковых систем&quot;"  />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:text="Перейти на курс &quot;Анализирование информации&quot;"  />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Перейти на курс &quot;Сравнение чисел в разных системах счисления&quot;"  />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Перейти на курс &quot;Использование поиска операционной системы и Word&quot;"  />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Перейти на курс &quot;Использование поисковых средств ОС&quot;"  />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Перейти на курс &quot;Создание презентации или форматирование текста&quot;"  />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Перейти на курс &quot;Обработка большого массива данных&quot;"  />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Перейти на курс &quot;Короткий алгоритм в различных средах испольнения&quot;"  />
+        </LinearLayout>
+
+    </ScrollView>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomMenu"
