@@ -16,7 +16,28 @@
         android:theme="@style/Theme.Exam"
         tools:targetApi="31">
         <activity
-            android:name=".temyFive"
+            android:name=".temy.temyTwelve"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temyEleven"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temyTen"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temyNine"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temyEight"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temySeven"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temySix"
+            android:exported="false" />
+        <activity
+            android:name=".temy.temyFive"
             android:exported="false" />
         <activity
             android:name=".temy.temyFour"

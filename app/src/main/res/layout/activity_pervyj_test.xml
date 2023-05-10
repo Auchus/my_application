@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:background="@color/white"
+    tools:context=".pervyjTest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:id="@+id/countLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/count_label"
+            android:textSize="22sp"/>
+
+
+        <TextView
+            android:id="@+id/nazvanie_voprosa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_label"
+            android:textSize="26sp"
+            android:gravity="fill"
+            android:layout_margin="10dp"
+            android:layout_marginTop="60dp"/>
+
+        <Button
+            android:id="@+id/btn_answer1"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/lavender"
+            android:onClick="checkAnswer"
+            android:text="@string/btn_answer" />
+
+        <Button
+            android:id="@+id/btn_answer2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="@string/btn_answer"
+            android:layout_marginTop="80dp"
+            android:background="@color/lavender"
+            android:onClick="checkAnswer"/>
+        <Button
+            android:id="@+id/btn_answer3"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="@string/btn_answer"
+            android:layout_marginTop="80dp"
+            android:background="@color/lavender"
+            android:onClick="checkAnswer"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

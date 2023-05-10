@@ -7,9 +7,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.exam.databinding.ActivityMainBinding
-import com.example.exam.temy.temyOne
-import com.example.exam.temy.temyTwo
-import com.example.exam.temy.teymThree
+import com.example.exam.temy.*
 import com.google.firebase.auth.FirebaseAuth
 import java.util.*
 import kotlin.collections.ArrayList
@@ -62,6 +60,45 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, teymThree::class.java)
             startActivity(intent)
         }
+        binding.button12.setOnClickListener {
+            val intent = Intent(this, temyFour::class.java)
+            startActivity(intent)
+        }
+        binding.button11.setOnClickListener {
+            val intent = Intent(this, temyFive::class.java)
+            startActivity(intent)
+        }
+        binding.button10.setOnClickListener {
+            val intent = Intent(this, temySix::class.java)
+            startActivity(intent)
+        }
+        binding.button9.setOnClickListener {
+            val intent = Intent(this, temySeven::class.java)
+            startActivity(intent)
+        }
+        binding.button8.setOnClickListener {
+            val intent = Intent(this, temyEight::class.java)
+            startActivity(intent)
+        }
+        binding.button7.setOnClickListener {
+            val intent = Intent(this, temyNine::class.java)
+            startActivity(intent)
+        }
+        binding.button6.setOnClickListener {
+            val intent = Intent(this, temyTen::class.java)
+            startActivity(intent)
+        }
+        binding.button16.setOnClickListener {
+            val intent = Intent(this, temyEleven::class.java)
+            startActivity(intent)
+        }
+        binding.button17.setOnClickListener {
+            val intent = Intent(this, temyTwelve::class.java)
+            startActivity(intent)
+        }
+
+
+
 
 
 

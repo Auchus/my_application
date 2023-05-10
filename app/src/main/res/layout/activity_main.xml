@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/rounded_button"
-                android:text="Перейти на курс &quot;Параметры информационных объектов&quot;" />
+                android:text="&quot;Параметры информационных объектов&quot;" />
 
             <Button
                 android:id="@+id/button14"
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:text="Перейти на курс &quot;Кодирование и декодирование информации&quot;"  />
+                android:text="&quot;Кодирование и декодирование информации&quot;"  />
 
             <Button
                 android:id="@+id/button13"
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:text="Перейти на курс &quot;Значение логического выражения&quot;" />
+                android:text="&quot;Значение логического выражения&quot;" />
 
             <Button
                 android:id="@+id/button12"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:text="Перейти на курс &quot;Формальные описания реальных объектов и процессов&quot;"  />
+                android:text="&quot;Формальные описания реальных объектов и процессов&quot;"  />
 
             <Button
                 android:id="@+id/button11"
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:text="Перейти на курс &quot;Простые линейные алгоритмы&quot;"
+                android:text="&quot;Простые линейные алгоритмы&quot;"
                 app:icon="@drawable/baseline_password_24" />
 
             <Button
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:text="Перейти на курс &quot;Программа с условным оператором&quot;"  />
+                android:text="&quot;Программа с условным оператором&quot;"  />
 
             <Button
                 android:id="@+id/button9"
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:text="Перейти на курс &quot;Информационно-коммуникационные технологии&quot;"  />
+                android:text="&quot;Информационно-коммуникационные технологии&quot;"  />
 
             <Button
                 android:id="@+id/button8"
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:text="Перейти на курс &quot;Запросы для поисковых систем&quot;"  />
+                android:text="&quot;Запросы для поисковых систем&quot;"  />
 
             <Button
                 android:id="@+id/button7"
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:text="Перейти на курс &quot;Анализирование информации&quot;"  />
+                android:text="&quot;Анализирование информации&quot;"  />
 
             <Button
                 android:id="@+id/button6"
@@ -97,8 +97,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Перейти на курс &quot;Сравнение чисел в разных системах счисления&quot;"  />
+                android:text="&quot;Сравнение чисел в разных системах счисления&quot;"  />
 
             <Button
                 android:id="@+id/button16"
@@ -106,8 +105,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Перейти на курс &quot;Использование поиска операционной системы и Word&quot;"  />
+                android:text="&quot;Использование поиска операционной системы и Word&quot;"  />
 
             <Button
                 android:id="@+id/button17"
@@ -115,8 +113,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Перейти на курс &quot;Использование поисковых средств ОС&quot;"  />
+                android:text="&quot;Использование поисковых средств ОС&quot;"  />
 
             <Button
                 android:id="@+id/button18"
@@ -124,8 +121,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Перейти на курс &quot;Создание презентации или форматирование текста&quot;"  />
+                android:text="&quot;Создание презентации или форматирование текста&quot;"  />
 
             <Button
                 android:id="@+id/button19"
@@ -133,17 +129,16 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Перейти на курс &quot;Обработка большого массива данных&quot;"  />
+                android:text="&quot;Обработка большого массива данных&quot;"  />
 
             <Button
                 android:id="@+id/button20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounded_button"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:text="Перейти на курс &quot;Короткий алгоритм в различных средах испольнения&quot;"  />
+                android:background="@drawable/rounded_button"
+                android:text="&quot;Короткий алгоритм в различных средах испольнения&quot;" />
         </LinearLayout>
 
     </ScrollView>
